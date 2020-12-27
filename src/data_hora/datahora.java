@@ -29,7 +29,7 @@ public class datahora {
 	    LocalDate ld2 = ld.plusWeeks(2).plusDays(1).minusMonths(1);
 	    System.out.println(ld2);
 	    
-	    // LocalTime - hora: 03:06:00
+	    // LocalTime - hora: 00:00:00
 	    LocalTime ltNow = LocalTime.now();
 	    System.out.println(ltNow);
 	    LocalTime lt = LocalTime.of(03, 06, 01, 100000);
@@ -58,7 +58,7 @@ public class datahora {
 	    // 06/08/1990 11:40:00 GMT-3 (America/Sao_Paulo)
 	    ZonedDateTime zdtNow = ZonedDateTime.now();
 	    System.out.println(zdtNow);
-	    ZoneId zoneId = ZoneId.of("America/Montevideo");
+	    ZoneId zoneId = ZoneId.of("America/Sao_Paulo");
 	    ZonedDateTime zdt = ZonedDateTime.of(ld, lt, zoneId);
 	    System.out.println(zdt);
 	    
